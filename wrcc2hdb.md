@@ -25,7 +25,7 @@ WRCC sites are uniquely identified by 6-digit ID's, with the first two digits re
 
 The result of the example query string is a table of monthly average temperature at site 020750, also known as Betatakin, AZ. The record covers all available historical data for that site. In addition to each monthly value, a single character indicates how many days of missing data are associated with each month. 'a' means that a single day is missing, 'b' means two, and so on. A missing character indicates that a full month of data is present. This character will be written to the data\_flags field in r\_base on a per-data point basis. The screenshot below shows a portion of the table resulting from the example query string.
 
-![](RackMultipart20230112-1-ikeidh_html_7687917772a20fe0.png)
+![](img/wrccSampleTable.png?raw=true)
 
 _Figure 2: A portion of the results table from the example WRCC query string._
 
@@ -35,11 +35,11 @@ _Figure 2: A portion of the results table from the example WRCC query string._
 
 WRCC sites and datatypes are mapped to HDB time series using the hdb\_ext\_data\_source and ref\_ext\_site\_data\_map tables. Wrcc2hdb.py requires a single external data source (primary key of the hdb\_ext\_data\_source table), which corresponds to a set of mappings in the ref\_ext\_site\_data\_map table. An example from the CUL project is shown below:
 
-![](RackMultipart20230112-1-ikeidh_html_b9c7a21052d6a682.png)
+![](img/wrccExtDataSource.png?raw=true)
 
 _Figure 3: External data source entry in hdb\_ext\_data\_source table for CUL WRCC climate load._
 
-![](RackMultipart20230112-1-ikeidh_html_1f3b7587f1842323.png)
+![](img/wrccExtSiteDataMap.png?raw=true)
 
 _Figure 4: Portion of site datatype mappings in ref\_ext\_site\_data\_map table from the CUL WRCC climate external data source._
 
@@ -49,7 +49,7 @@ Note that only monthly data is supported by wrcc2hdb.py, so all entries in ref\_
 
 A connection file is used to supply database connection credentials. If stored in the hdb/python directory, use \*.auth to ensure that the file is ignored by Git. The screenshot below shows required connection file format.
 
-![](RackMultipart20230112-1-ikeidh_html_6bb2983d63db4e0.png)
+![](img/HDBConnFile.png?raw=true)
 
 _Figure 5: Database connection file format._
 

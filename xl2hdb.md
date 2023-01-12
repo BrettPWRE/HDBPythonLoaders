@@ -2,7 +2,7 @@
 
 # Overview
 
-The xl2hdb.py Python data loader is designed for loading data from Excel spreadsheets to the HDB R tables. Data is written to the r\_base table with an 'O' in the overwrite\_flag field by default, with metadata values defined in the source data spreadsheets. It is located underneath the "python" subdirectory in the HDB repository and relies on the generic lib/hdb.py class, which provides database connection and access to HDB SQL packages like ts\_xfer for writing arrays of real data.
+The xl2hdb.py Python data loader is designed for loading data from Excel spreadsheets to the HDB R tables. Data is written to the r\_base table with an 'O' in the overwrite\_flag field by default, with metadata values defined in the source data spreadsheets. It relies on the generic lib/hdb.py class, which provides database connection and access to HDB SQL packages like ts\_xfer for writing arrays of real data.
 
 ![](img/xlFolderStructure.png?raw=true)
 

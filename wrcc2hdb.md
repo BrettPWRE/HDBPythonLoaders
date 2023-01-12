@@ -2,7 +2,7 @@
 
 # Overview
 
-The wrcc2hdb.py Python data loader is designed to load monthly precipitation and average temperature from the Western Regional Climate Center (WRCC) to the HDB R tables. WRCC data is used to compute Upper Colorado consumptive use and loss (CUL) data, but could also be used for other purposes by mapping the loader to different time series. By default, data written by the loader includes an 'O' in the r\_base.overwrite\_flag field. Wrcc2hdb.py is located underneath the "python" subdirectory in the HDB repository and relies on the generic lib/hdb.py class, which provides database connection and access to HDB SQL packages like ts\_xfer for writing arrays of real data.
+The wrcc2hdb.py Python data loader is designed to load monthly precipitation and average temperature from the Western Regional Climate Center (WRCC) to the HDB R tables. WRCC data is used to compute Upper Colorado consumptive use and loss (CUL) data, but could also be used for other purposes by mapping the loader to different time series. By default, data written by the loader includes an 'O' in the r\_base.overwrite\_flag field. Wrcc2hdb.py relies on the generic lib/hdb.py class, which provides database connection and access to HDB SQL packages like ts\_xfer for writing arrays of real data.
 
 ![](img/wrccFolderStructure.png?raw=true)
 

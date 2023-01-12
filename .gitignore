@@ -1,0 +1,6 @@
+*.auth
+.~*
+*.xlsx
+__pycache__
+**/.vscode
+
